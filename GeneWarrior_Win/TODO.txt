@@ -1,0 +1,51 @@
+
+/*******************************************************************************************************************\
+Top Priority
+------------
+
+* Visualize forces used - for example sphere color/size on the joints.
+
+* Implement NEAT algorithm
+
+* Provide different input - Center_Of_Mass speed,acceleration
+
+* Create visualization mode! graph of best,average and worst should be nice =)
+
+* Consider "batching" few ragdolls into the same world, it might reduce the world start/stop costs
+
+* Try teaching a NN some cyclic function and allow it to use it (perhaps by adding an extra LAST layer)
+
+* Try teaching one hidden layer at a time
+
+* Use BETTER RANDOM !!! (maybe for inside ODE as well ?? )
+
+
+\*******************************************************************************************************************/
+
+* Allow changing ragdoll easily
+
+* General refactoring, being able to easly plug-and-play different parts
+--- Genome
+--- Evolution
+--- Organism
+--- Evaluation function
+
+* Create a tool to view an organism (and visualize the functions on each muscle)
+* Another tool showing the evolution process, including family trees
+
+* Minimize search space
+	* Consider starting with a very discrete mode (only 20 possible values for float), and gradually refine it
+	
+* Better mating - allow reducing a layer
+
+* !!!! Make sure that the input sensor range is scaled into the sinus input (so there won't be "jumps") !!!
+
+* Consider changing (hardcoded) or evolving the ragdoll itself as well - should be very delicate changes
+
+* A tool that allows people to build different types of creatures - models,amotors and constrains !!
+
+* Add threads (maybe each thread is a community of organisms?)
+
+* Maybe change organism dna into a more complicated programming language
+
+* Remember that i allow brain action every 5 physics ticks
